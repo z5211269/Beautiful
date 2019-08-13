@@ -1,1 +1,40 @@
-HELLO-WORLD
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>九九乘法表</title>
+ 
+<style type="text/css">
+table{
+	width:600px;
+	border-collapse:collapse;
+	}
+table th{
+	border:#CC0000 1px solid
+	}
+</style>
+</head>
+<body>
+ 
+<script type="text/javascript">
+//用表格形式显示一个九九乘法表
+ 
+document.write("<table>");
+ 
+for (var x = 1; x <= 9; x++)
+{
+	document.write("<tr>");
+	for (var y = 1; y <= x; y++)
+	{
+		document.write("<th>"+y+"*"+x+"="+y*x+"</th>");
+	}
+	document.write("</tr>");
+}
+document.write("</table>");
+ 
+</script>
+</body>
+</html>
+--------------------- 
+版权声明：本文为CSDN博主「IT痴者」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/w695050167/article/details/7594968
